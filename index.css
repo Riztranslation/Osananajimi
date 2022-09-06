@@ -122,9 +122,6 @@
      height: 20px;
      font-weight:300;
  }
- ::selection{
-    opacity: 1%;
- }
  .detail a{
      display: inline-block;
      font-size: 10px;
@@ -219,12 +216,18 @@
      border-radius: 10px;
  }
  .list a {
-     color: inherit;
-     font-family: 'Poppins', sans-serif;
-     font-size: smaller;
-     margin: 2.5px;
-     display: block;
-     width: 99%;
+    border-left: 3px solid #5c5c5c ;
+    color: inherit;
+    font-family: 'Poppins', sans-serif;
+    font-size: smaller;
+    margin: 2.5px;
+    display: block;
+    width: 99%;
+    padding: 2.5px;
+ }
+ .list a:hover{
+    transition: 0.5s;
+    background-color: rgb(194, 203, 210);
  }
  .list p {
      color: gray;
@@ -236,19 +239,6 @@
      z-index: 2;
      display: absolute;
     }
-.list li{
-    margin-bottom: -10px;
-    border-bottom: 12px solid  rgb(194, 203, 210);
-    border-left: 3px solid  rgb(194, 203, 210);
-    width: 99%;
- }
-.list li:hover {
-     transition: 0.3s linear;
-     margin-bottom: -10px;
-     border-bottom:  12px solid darkslategray;
-     border-left: 3px solid  darkslategray;
-     width: 99%;
- }
  .info{
     width: 100%;
     background-color: gray;
